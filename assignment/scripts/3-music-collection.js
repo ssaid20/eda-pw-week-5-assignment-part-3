@@ -15,12 +15,12 @@ function addToCollection(title, artist, yearPublished) {
   return album;
 }
 // Test the addToCollection function
-console.log(addToCollection('Album 1', 'Artist A', 2020));
-console.log(addToCollection('Album 2', 'Artist B', 2018));
-console.log(addToCollection('Album 3', 'Artist A', 2022));
-console.log(addToCollection('Album 4', 'Artist C', 2015));
-console.log(addToCollection('Album 5', 'Artist B', 2017));
-console.log(addToCollection('Album 6', 'Artist D', 2019));
+console.log(addToCollection('After Hours', 'The Weekend', 2020));
+console.log(addToCollection('KOD', 'J. Cole', 2018));
+console.log(addToCollection('Dawn FM', 'The Weekend', 2022));
+console.log(addToCollection('Drip or Drown', 'Gunna', 2019));
+console.log(addToCollection('Truly Yours', 'J. Cole', 2017));
+console.log(addToCollection('Free Spirit', 'Khalid', 2019));
 
 // Display the collection array
 console.log(collection);
@@ -51,8 +51,8 @@ function showCollection(albums) {
   }
   
   // Test the `findByArtist` function.
-  console.log('Testing findByArtist with "Artist A":', findByArtist('Artist A'));
-  console.log('Testing findByArtist with "Artist B":', findByArtist('Artist B'));
+  console.log('Testing findByArtist with "The Weekend":', findByArtist('The Weekend'));
+  console.log('Testing findByArtist with "J. Cole":', findByArtist('J. Cole'));
   
   
   
