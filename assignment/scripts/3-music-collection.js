@@ -34,4 +34,30 @@ function showCollection(albums) {
   // Test the showCollection function
   console.log("---- Testing showCollection ----");
   showCollection(collection);
+  function findByArtist(artist) {
+    let results = [];
+  
+    // Loop through each album in the collection
+    for (let album of collection) {
+      // Check if the artist of the album matches the input artist
+      if (album.artist === artist) {
+        // If a match is found, add the album to the results array
+        results.push(album);
+      }
+    }
+  
+    // Return the array containing matching albums
+    return results;
+  }
+  
+  // Test the `findByArtist` function.
+  console.log('Testing findByArtist with "Artist A":', findByArtist('Artist A'));
+  console.log('Testing findByArtist with "Artist B":', findByArtist('Artist B'));
+  
+  
+  
+  
+  
+  
+  
   
