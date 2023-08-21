@@ -24,3 +24,14 @@ console.log(addToCollection('Album 6', 'Artist D', 2019));
 
 // Display the collection array
 console.log(collection);
+function showCollection(albums) {
+    console.log(`Number of albums in collection: ${albums.length}`);
+    for (let album of albums) {
+      console.log(`${album.title} by ${album.artist}, published in ${album.yearPublished}`);
+    }
+  }
+  
+  // Test the showCollection function
+  console.log("---- Testing showCollection ----");
+  showCollection(collection);
+  
